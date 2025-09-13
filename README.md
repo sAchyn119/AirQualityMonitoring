@@ -1,63 +1,69 @@
-# 🌍 Air Quality Monitoring using AI/ML
+# 🌍 Air Quality Monitoring using AI/ML - Final Project
 
-This project is developed under the **AICTE Edunet Internship** with the theme:  
-**Environmental Monitoring & Pollution Control**.  
+## ✅ Objective  
+Build an intelligent system to analyze air pollution data, detect trends, and predict Air Quality Index (AQI) based on pollutant values using machine learning. The system provides an interactive web application for live AQI prediction.
 
-The aim is to analyze **air quality data**, detect pollution trends, and build a simple machine learning model to predict the **Air Quality Index (AQI)** from various pollutants.
+## ✅ Final Deliverables  
+- ✅ Data Preprocessing  
+  - Handled missing values by filling with column means  
+  - Converted Date column into datetime format  
+- ✅ Exploratory Data Analysis (EDA)  
+  - AQI trend over time  
+  - Correlation heatmap between pollutants and AQI  
+- ✅ Machine Learning Models  
+  - Linear Regression (baseline)  
+  - Random Forest Regressor (final model selected based on performance)  
+- ✅ Model Saving  
+  - Saved best trained model as: `models/best_model.pkl`  
+- ✅ Interactive Web App  
+  - Built with **Streamlit**  
+  - Allows live input of pollutant values to predict AQI  
 
----
+## 🚀 How to Run the Project
+pip install -r requirements.txt
+### 2️⃣ Run the Streamlit App
+streamlit run app.py
 
-## 📊 Dataset
-- **Source:** Kaggle (Air Quality Data in India, 2015–2020)  
-- **File Used:** `city_day.csv`  
-- Columns include:  
-  - `City`, `Date`  
-  - Pollutants: `PM2.5`, `PM10`, `NO2`, `SO2`, `CO`, `O3`  
-  - `AQI` (Air Quality Index)
+### 3️⃣ Open in Browser
 
----
+Visit the displayed URL (usually http://localhost:8501) to use the AQI prediction app.
 
-## ✅ Progress
+## ✅ Improvisations Done
 
-### Week 1 (30%)
-- Imported dataset into Jupyter Notebook (`.ipynb`).  
-- Explored structure of dataset using `.info()`, `.describe()`.  
-- Checked for missing values.  
-- Displayed first few rows with `head()`.
+Advanced data preprocessing (missing value handling, datetime parsing)
 
-### Week 2 (60%)
-- Handled missing values by filling with mean.  
-- Converted `Date` column to datetime format.  
-- **EDA (Exploratory Data Analysis):**
-  - AQI trends over time.  
-  - Correlation heatmap between pollutants and AQI.  
-- **ML Model:**
-  - Built a Linear Regression model to predict AQI from pollutants.  
-  - Evaluated with **RMSE** and **R² score**.  
-  - Example prediction using sample pollutant values.  
+Clean and interactive visualizations (trend line + correlation heatmap)
 
----
+Trained multiple ML models and selected the best-performing one
 
-## 🛠️ Tech Stack
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
+Example prediction functionality added
 
----
+Simple and user-friendly web interface using Streamlit
 
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sAchyn119/AirQualityMonitoring.git
-   cd AirQualityMonitoring
-2. Install dependencies:
+## ✅ Project Folder Structure
+AirQualityMonitoring/
+│
+├── app.py                 # Streamlit Web App  
+├── models/  
+│   └── best_model.pkl     # Saved trained Random Forest model  
+├── data/  
+│   └── city_day.csv       # Dataset file  
+├── requirements.txt       # Required dependencies  
+├── README.md              # Project description file  
+├── Week3_Final_AQI_Project.ipynb  # Full project notebook  
 
-    pip install -r requirements.txt
+# 👨‍💻 Author
 
+Sachin Yadav
+# Internship: AICTE Edunet 2025
 
-    (or manually install: pandas, numpy, matplotlib, seaborn, scikit-learn)
+# 📅 Year: 2025
 
-3. Run the Jupyter Notebook:
-
-    jupyter notebook Week2_AQI_Project.ipynb
+## ✅ Sample requirements.txt Content
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+joblib
+streamlit
