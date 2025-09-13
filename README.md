@@ -106,5 +106,3 @@ Well-structured project ready for production
 Sachin Yadav
 # AICTE Edunet Internship – 2025
 📅 Year: 2025
-```bash
-pip install -r requirements.txt
