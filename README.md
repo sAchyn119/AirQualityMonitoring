@@ -4,16 +4,12 @@
 Environmental pollution is a major global issue affecting public health and ecosystems. This project leverages **Artificial Intelligence (AI)** and **Machine Learning (ML)** to monitor air pollution data, analyze trends, and predict the **Air Quality Index (AQI)** in real time based on pollutant values.  
 An interactive web app built with **Streamlit** allows easy and fast AQI prediction for different pollutant inputs.
 
----
-
 ## 🎯 Objective  
 - Preprocess and clean real-world air pollution dataset  
 - Perform Exploratory Data Analysis (EDA) to understand pollutant patterns  
 - Build and compare multiple ML models  
 - Deploy the best model in an interactive web app for real-time predictions  
 - Enable easy use without coding knowledge
-
----
 
 ## ✅ Key Features & Deliverables  
 
@@ -33,13 +29,13 @@ An interactive web app built with **Streamlit** allows easy and fast AQI predict
 ### 💾 Model Persistence  
 - Best model saved as: `models/best_model.pkl` using **Joblib**  
 - Enables fast loading without retraining
+- 📥 Model Download Link:  
+  https://drive.google.com/file/d/14R8VnfZA8aPdHW9m19TDQ_RFWXsAFzYB/view?usp=sharing 
 
 ### 🌐 Interactive Web Application  
 - Built using **Streamlit**  
 - Simple and clean UI to input pollutant values  
 - Predicts AQI instantly and displays results
-
----
 
 ## 🚀 How to Run
 
